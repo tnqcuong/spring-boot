@@ -11,6 +11,7 @@ public class EasyNotesApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }

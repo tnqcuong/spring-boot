@@ -1,19 +1,18 @@
-package com.org.prototype.example.service;
+package com.org.prototype.example.service.impl;
 
 
 import com.org.prototype.example.dao.UserDao;
 import com.org.prototype.example.dto.UserDto;
 import com.org.prototype.example.model.User;
+import com.org.prototype.example.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 
 @Service
-@Transactional
-public class UserService implements IUserService{
+public class UserService implements IUserService {
 
     @Autowired
     private UserDao userDao;
